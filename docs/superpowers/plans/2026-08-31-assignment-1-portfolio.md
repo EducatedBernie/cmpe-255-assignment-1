@@ -55,7 +55,6 @@
 **Files:**
 - Create: `README.md`
 - Create: `docs/PROMPTS_AND_PROCESS.md`
-- Create: `docs/MEDIUM_ARTICLE_DRAFT.md`
 - Create: `.gitignore`
 
 **Interfaces:**

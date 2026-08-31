@@ -6,6 +6,8 @@ This repository is an end-to-end, reproducible study of the [Adult/Census Income
 
 > **YouTube walkthrough:** [Watch the complete end-to-end demonstration](https://youtu.be/ktyH8cvA3iw).
 
+> **Medium article:** [Beyond Accuracy: What an Agent-Assisted Adult Income Project Actually Taught Me](https://medium.com/@bernie.miao/beyond-accuracy-what-an-agent-assisted-adult-income-project-actually-taught-me-03154ed71329?postPublishedType=initial).
+
 ## Deliverables
 
 - **Part 1:** original Adult Income workflow—EDA, preprocessing, baseline, model comparison, feature importance, and written interpretation
@@ -13,7 +15,7 @@ This repository is an end-to-end, reproducible study of the [Adult/Census Income
 - **Artifacts:** measured CSV/JSON results and publication-ready figures under [`artifacts/`](artifacts/)
 - **Process record:** [`docs/PROMPTS_AND_PROCESS.md`](docs/PROMPTS_AND_PROCESS.md)
 - **Paraphrased report:** [`docs/RESULTS.md`](docs/RESULTS.md)
-- **Medium draft:** [`docs/MEDIUM_ARTICLE_DRAFT.md`](docs/MEDIUM_ARTICLE_DRAFT.md)
+- **Medium article:** [Read the published article](https://medium.com/@bernie.miao/beyond-accuracy-what-an-agent-assisted-adult-income-project-actually-taught-me-03154ed71329?postPublishedType=initial)
 - **YouTube walkthrough:** [Watch on YouTube](https://youtu.be/ktyH8cvA3iw)
 
 ## Results
@@ -65,7 +67,7 @@ The last command downloads the original UCI files into ignored local storage and
 .
 ├── artifacts/                 # Generated metrics, summaries, and figures
 ├── data/README.md             # Dataset provenance; raw downloads are ignored
-├── docs/                      # Report, prompt log, and Medium article draft
+├── docs/                      # Report and prompt/process record
 ├── src/analysis.py            # Complete reproducible pipeline
 ├── tests/test_analysis.py     # Loading, cleaning, determinism, and output checks
 ├── requirements.txt
@@ -90,5 +92,5 @@ This is a teaching project, not a decision system. The data represents 1994 cens
 - [x] Create a new public GitHub repository and push `main`
 - [x] Record and upload the YouTube walkthrough
 - [x] Add the YouTube URL to this README
-- [ ] Publish the Medium draft if required by the course submission page
+- [x] Publish and link the Medium article
 - [x] Verify the public GitHub and YouTube links
