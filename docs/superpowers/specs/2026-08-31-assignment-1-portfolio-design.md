@@ -22,7 +22,7 @@ This intentionally adapts three prompt-catalog themes—classification, clusteri
 
 `src/analysis.py` owns the deterministic analysis pipeline. It downloads the public UCI source files when absent, validates their schema, trains only scikit-learn pipelines, and writes all derived artifacts under `artifacts/`. `tests/test_analysis.py` checks cleaning, schema validation, and reproducible model output on a small in-memory fixture.
 
-Human-facing deliverables live in the repository root and `docs/`: a primary README, prompt/process log, report, Medium draft, and YouTube walkthrough script. Generated metrics and images are committed so the repository remains reviewable without rerunning training.
+Human-facing deliverables live in the repository root and `docs/`: a primary README, prompt/process log, report, and Medium draft. The README links the published YouTube walkthrough. Generated metrics and images are committed so the repository remains reviewable without rerunning training.
 
 ## Data and Ethics
 
@@ -33,4 +33,4 @@ The source is the UCI Adult dataset (48,842 records, 14 predictors), mirrored on
 - Unit tests must pass with Python's built-in `unittest`.
 - The full pipeline must exit successfully and regenerate every documented artifact.
 - Generated metrics must include a dummy baseline and at least two learned classifiers.
-- The README must link every local artifact and clearly mark the YouTube URL as pending until the user uploads the recording.
+- The README must link every local artifact and the published YouTube walkthrough.

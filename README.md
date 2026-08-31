@@ -4,7 +4,7 @@
 
 This repository is an end-to-end, reproducible study of the [Adult/Census Income dataset](https://archive.ics.uci.edu/dataset/2/adult), a popular problem also available on [Kaggle](https://www.kaggle.com/datasets/jainaru/adult-income-census-dataset/data). It was built with OpenAI Codex and follows CRISP-DM from data understanding through evaluation and responsible interpretation.
 
-> **YouTube walkthrough:** upload pending. The complete recording plan is in [`docs/VIDEO_SCRIPT.md`](docs/VIDEO_SCRIPT.md).
+> **YouTube walkthrough:** [Watch the complete end-to-end demonstration](https://youtu.be/ktyH8cvA3iw).
 
 ## Deliverables
 
@@ -14,7 +14,7 @@ This repository is an end-to-end, reproducible study of the [Adult/Census Income
 - **Process record:** [`docs/PROMPTS_AND_PROCESS.md`](docs/PROMPTS_AND_PROCESS.md)
 - **Paraphrased report:** [`docs/RESULTS.md`](docs/RESULTS.md)
 - **Medium draft:** [`docs/MEDIUM_ARTICLE_DRAFT.md`](docs/MEDIUM_ARTICLE_DRAFT.md)
-- **YouTube script:** [`docs/VIDEO_SCRIPT.md`](docs/VIDEO_SCRIPT.md)
+- **YouTube walkthrough:** [Watch on YouTube](https://youtu.be/ktyH8cvA3iw)
 
 ## Results
 
@@ -65,7 +65,7 @@ The last command downloads the original UCI files into ignored local storage and
 .
 ├── artifacts/                 # Generated metrics, summaries, and figures
 ├── data/README.md             # Dataset provenance; raw downloads are ignored
-├── docs/                      # Report, prompt log, article, and video script
+├── docs/                      # Report, prompt log, and Medium article draft
 ├── src/analysis.py            # Complete reproducible pipeline
 ├── tests/test_analysis.py     # Loading, cleaning, determinism, and output checks
 ├── requirements.txt
@@ -87,8 +87,8 @@ This is a teaching project, not a decision system. The data represents 1994 cens
 ## Final publishing checklist
 
 - [ ] Review the report and practice explaining every metric
-- [ ] Create a new public GitHub repository and push this branch
-- [ ] Record the walkthrough using `docs/VIDEO_SCRIPT.md`
-- [ ] Upload the video and replace the pending YouTube line above
+- [x] Create a new public GitHub repository and push `main`
+- [x] Record and upload the YouTube walkthrough
+- [x] Add the YouTube URL to this README
 - [ ] Publish the Medium draft if required by the course submission page
-- [ ] Recheck every public link in a signed-out browser
+- [x] Verify the public GitHub and YouTube links

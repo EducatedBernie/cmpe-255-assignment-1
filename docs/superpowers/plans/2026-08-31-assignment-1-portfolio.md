@@ -56,7 +56,6 @@
 - Create: `README.md`
 - Create: `docs/PROMPTS_AND_PROCESS.md`
 - Create: `docs/MEDIUM_ARTICLE_DRAFT.md`
-- Create: `docs/VIDEO_SCRIPT.md`
 - Create: `.gitignore`
 
 **Interfaces:**
@@ -65,5 +64,5 @@
 
 - [x] Write a concise README organized as Assignment 1 with source, setup, results, artifacts, limitations, and publishing checklist.
 - [x] Document the original/adapted prompts without claiming a fabricated verbatim chat transcript.
-- [x] Draft a paraphrased article and a 6–8 minute end-to-end video script grounded in measured outputs.
+- [x] Draft a paraphrased article and publish an end-to-end YouTube walkthrough grounded in measured outputs.
 - [x] Run the full test suite and pipeline again, inspect `git diff --check`, and compare the repository against the assignment checklist.
