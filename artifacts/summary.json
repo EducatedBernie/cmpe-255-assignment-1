@@ -1,0 +1,51 @@
+{
+  "rows": 48842,
+  "features": 14,
+  "positive_rate": 0.2393,
+  "missing_cells": 6465,
+  "train_rows": 39073,
+  "test_rows": 9769,
+  "classification": [
+    {
+      "model": "Random forest",
+      "accuracy": 0.8382,
+      "precision": 0.6263,
+      "recall": 0.8028,
+      "f1": 0.7037,
+      "roc_auc": 0.917
+    },
+    {
+      "model": "Logistic regression",
+      "accuracy": 0.8068,
+      "precision": 0.5651,
+      "recall": 0.837,
+      "f1": 0.6747,
+      "roc_auc": 0.904
+    },
+    {
+      "model": "Dummy baseline",
+      "accuracy": 0.7607,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": 0.5
+    }
+  ],
+  "best_model": "Random forest",
+  "clustering": {
+    "clusters": 4,
+    "silhouette_sample_rows": 2000,
+    "silhouette": 0.2013,
+    "sizes": {
+      "0": 2238,
+      "1": 25036,
+      "2": 21324,
+      "3": 244
+    }
+  },
+  "anomaly_detection": {
+    "method": "IsolationForest",
+    "flagged_rows": 2443,
+    "flagged_rate": 0.05
+  }
+}

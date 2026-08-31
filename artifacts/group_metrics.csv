@@ -1,0 +1,3 @@
+sex,rows,accuracy,recall
+Female,3289,0.9203,0.6567
+Male,6480,0.7965,0.83
