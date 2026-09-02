@@ -6,12 +6,14 @@ This repository is an end-to-end, reproducible study of the [Adult/Census Income
 
 > **YouTube walkthrough:** [Watch the complete end-to-end demonstration](https://youtu.be/ktyH8cvA3iw).
 
+> **Supplemental walkthrough:** recording pending for the three newly added Part 2 replications.
+
 > **Medium article:** [Beyond Accuracy: What an Agent-Assisted Adult Income Project Actually Taught Me](https://medium.com/@bernie.miao/beyond-accuracy-what-an-agent-assisted-adult-income-project-actually-taught-me-03154ed71329?postPublishedType=initial).
 
 ## Deliverables
 
 - **Part 1:** original Adult Income workflow—EDA, preprocessing, baseline, model comparison, feature importance, and written interpretation
-- **Part 2:** focused replications of the instructor prompt catalog's clustering, anomaly-detection, and audit experiments
+- **Part 2:** [six mapped project replications](replications/) covering clustering, association mining, anomaly detection, AutoML, auditing, and forecasting
 - **Artifacts:** measured CSV/JSON results and publication-ready figures under [`artifacts/`](artifacts/)
 - **Process record:** [`docs/PROMPTS_AND_PROCESS.md`](docs/PROMPTS_AND_PROCESS.md)
 - **Paraphrased report:** [`docs/RESULTS.md`](docs/RESULTS.md)
@@ -36,16 +38,18 @@ The dummy baseline shows why accuracy alone is unsafe: it gets 76% accuracy but 
 
 ![Random forest feature importance](artifacts/figures/feature_importance.png)
 
-## Part 2: Creative replication
+## Part 2: Six creative project replications
 
-Rather than duplicating all 14 full-stack applications in the [reference repository](https://github.com/dlmastery/data_science_examples), this project adapts representative experiments to one coherent dataset:
+The emailed requirement calls for at least six replications. This submission maps six experiments to the [reference repository](https://github.com/dlmastery/data_science_examples), with full evidence indexed under [`replications/`](replications/):
 
-| Reference theme | This replication | Result |
-|---|---|---|
-| End-to-end supervised learning | Dummy, logistic regression, and random forest | Best ROC-AUC: 0.9170 |
-| Customer segmentation | Four-cluster MiniBatch K-means | Silhouette: 0.2013; weak separation |
-| Anomaly detection | Isolation Forest | 2,443 records flagged at the configured 5% threshold |
-| Enterprise audit | Leakage controls, deterministic tests, group slices | Material recall gap; educational use only |
+| # | Reference project | Local replication | Result |
+|---:|---|---|---|
+| 1 | 03 Customer Segmentation | Four-cluster MiniBatch K-means | Silhouette 0.2013 |
+| 2 | 04 Associative Pattern Mining | Adult categorical association rules | 9 rules; top lift 1.8645 |
+| 3 | 06 Anomaly Detection | Isolation Forest | 2,443 rows at configured 5% cutoff |
+| 4 | 07 AutoML | Four-candidate automated benchmark | Best CV ROC-AUC 0.9169 |
+| 5 | 11 Enterprise DS Audit | Leakage, reproducibility, and group checks | Material recall gap identified |
+| 6 | 12 Time-Series Forecasting | AirPassengers seasonal-naive versus Ridge | Ridge MAPE 3.15% |
 
 ## Run it
 
@@ -57,6 +61,7 @@ source .venv/bin/activate
 python -m pip install -r requirements.txt
 python -m unittest discover -s tests -v
 python -m src.analysis
+python -m src.replications
 ```
 
 The last command downloads the original UCI files into ignored local storage and regenerates everything in `artifacts/`.
@@ -68,8 +73,9 @@ The last command downloads the original UCI files into ignored local storage and
 ├── artifacts/                 # Generated metrics, summaries, and figures
 ├── data/README.md             # Dataset provenance; raw downloads are ignored
 ├── docs/                      # Report and prompt/process record
-├── src/analysis.py            # Complete reproducible pipeline
-├── tests/test_analysis.py     # Loading, cleaning, determinism, and output checks
+├── replications/              # Six numbered Part 2 project replications
+├── src/                       # Part 1 and Part 2 experiment code
+├── tests/                     # Loading, cleaning, metrics, and output checks
 ├── requirements.txt
 └── README.md
 ```
@@ -94,3 +100,4 @@ This is a teaching project, not a decision system. The data represents 1994 cens
 - [x] Add the YouTube URL to this README
 - [x] Publish and link the Medium article
 - [x] Verify the public GitHub and YouTube links
+- [ ] Record and link the supplemental walkthrough for replications 04, 07, and 12

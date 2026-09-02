@@ -31,10 +31,10 @@
 - Produces: `benchmark_models(frame: DataFrame, max_rows: int = 12000) -> DataFrame`
 - Produces: `forecast_time_series(frame: DataFrame, test_months: int = 24) -> tuple[dict, DataFrame]`
 
-- [ ] Write tests with literal expected association support/confidence, four expected benchmark candidates, and chronological forecast output.
-- [ ] Run `python -m unittest tests/test_replications.py -v`; expect import failure for `src.replications`.
-- [ ] Implement direct pair counting, four-candidate cross-validation, and seasonal-naive/Ridge forecasting.
-- [ ] Run the new tests and the existing full suite.
+- [x] Write tests with literal expected association support/confidence, four expected benchmark candidates, and chronological forecast output.
+- [x] Run `python -m unittest tests/test_replications.py -v`; expect import failure for `src.replications`.
+- [x] Implement direct pair counting, four-candidate cross-validation, and seasonal-naive/Ridge forecasting.
+- [x] Run the new tests and the existing full suite.
 
 ### Task 2: Evidence generation
 
@@ -46,9 +46,9 @@
 - Consumes: `python -m src.replications`
 - Produces: `rules.csv`, `metrics.csv`, `forecast.csv`, and three PNG figures
 
-- [ ] Download and validate the 144-row AirPassengers CSV from the documented R dataset mirror.
-- [ ] Run `python -m src.replications` and confirm every expected artifact exists.
-- [ ] Inspect all numerical results and figures before writing conclusions.
+- [x] Download and validate the 144-row AirPassengers CSV from the documented R dataset mirror.
+- [x] Run `python -m src.replications` and confirm every expected artifact exists.
+- [x] Inspect all numerical results and figures before writing conclusions.
 
 ### Task 3: Six-project presentation
 
@@ -63,6 +63,6 @@
 - Consumes: verified generated evidence
 - Produces: a grader-facing count of exactly six mapped replications
 
-- [ ] Write the six-project index and concise experiment conclusions.
-- [ ] Update the root README to say exactly six, link evidence, and disclose the supplemental-video requirement.
-- [ ] Run tests, both analysis commands, local-link validation, `git diff --check`, and artifact checks.
+- [x] Write the six-project index and concise experiment conclusions.
+- [x] Update the root README to say exactly six, link evidence, and disclose the supplemental-video requirement.
+- [x] Run tests, both analysis commands, local-link validation, `git diff --check`, and artifact checks.

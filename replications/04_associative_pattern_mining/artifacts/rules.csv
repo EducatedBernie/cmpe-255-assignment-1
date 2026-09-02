@@ -1,0 +1,10 @@
+antecedent,consequent,support,confidence,lift,rows
+income=>50K,marital-status=Married-civ-spouse,0.204414,0.854283,1.864465,9984
+occupation=Other-service,income=<=50K,0.096618,0.958562,1.260075,4719
+marital-status=Never-married,income=<=50K,0.314975,0.95452,1.254762,15384
+marital-status=Divorced,income=<=50K,0.122067,0.898839,1.181566,5962
+occupation=Adm-clerical,income=<=50K,0.099156,0.863126,1.13462,4843
+education=HS-grad,income=<=50K,0.271918,0.841422,1.106089,13281
+education=Some-college,income=<=50K,0.18048,0.810351,1.065245,8815
+occupation=Craft-repair,income=<=50K,0.096822,0.773724,1.017096,4729
+occupation=Sales,income=<=50K,0.08249,0.732013,0.962266,4029

@@ -20,6 +20,12 @@ The random forest's largest impurity-based signals included age, marital-status/
 
 ## Replicated experiments
 
+Six mapped project replications are indexed in [`replications/`](../replications/).
+
+### Association-rule mining
+
+Nine Adult categorical rules met support ≥ 8% and confidence ≥ 60%. The highest-lift rule was `income=>50K → marital-status=Married-civ-spouse`, with 20.44% support, 85.43% confidence, and 1.8645 lift. It is a historical association, not a causal claim.
+
 ### Demographic clustering
 
 MiniBatch K-means formed four groups from standardized numerical attributes. The sampled silhouette score was only **0.2013**, indicating substantial overlap rather than clean natural segments. Cluster sizes were also very uneven: 2,238; 25,036; 21,324; and 244 records. The honest conclusion is that this feature set does not support strong cluster claims without deeper feature design and stability analysis.
@@ -27,6 +33,14 @@ MiniBatch K-means formed four groups from standardized numerical attributes. The
 ### Anomaly detection
 
 Isolation Forest flagged 2,443 records. This is exactly 5% because the experiment set `contamination=0.05`; it is a ranking threshold chosen for demonstration, not evidence that precisely 5% of people are truly anomalous.
+
+### AutoML-style benchmark
+
+Four candidates were compared with identical preprocessing and three-fold cross-validation on 12,000 deterministic Adult samples. HistGradientBoosting ranked first with **0.9169 ROC-AUC** and **0.6988 F1**, narrowly ahead of random forest at 0.9057 ROC-AUC.
+
+### Time-series forecasting
+
+On the final 24 months of the AirPassengers series, Ridge regression reduced MAPE from **10.52%** for the seasonal-naive baseline to **3.15%**. Its lag and seasonal features captured the growth trend without randomizing the chronological evaluation.
 
 ### Group diagnostic
 

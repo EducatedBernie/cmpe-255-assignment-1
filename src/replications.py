@@ -17,12 +17,12 @@ from sklearn.compose import ColumnTransformer
 from sklearn.ensemble import ExtraTreesClassifier, HistGradientBoostingClassifier, RandomForestClassifier
 from sklearn.impute import SimpleImputer
 from sklearn.linear_model import LogisticRegression, Ridge
-from sklearn.metrics import f1_score, mean_absolute_error, mean_absolute_percentage_error, mean_squared_error
+from sklearn.metrics import mean_absolute_error, mean_absolute_percentage_error, mean_squared_error
 from sklearn.model_selection import StratifiedKFold, cross_validate
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
-from src.analysis import COLUMNS, NUMERIC_COLUMNS, RANDOM_STATE, clean_adult, load_adult
+from src.analysis import NUMERIC_COLUMNS, RANDOM_STATE, clean_adult, load_adult
 
 
 def mine_association_rules(

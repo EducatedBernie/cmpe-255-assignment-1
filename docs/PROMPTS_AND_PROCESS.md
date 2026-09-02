@@ -12,7 +12,7 @@ This is a process record, not a fabricated verbatim transcript. The original Cod
 - Instructor worked example: Adult Income analysis organized around CRISP-DM
 - Reference prompt catalog: [`dlmastery/data_science_examples/PROMPTS.md`](https://github.com/dlmastery/data_science_examples/blob/main/PROMPTS.md)
 
-The reference catalog contains 14 full-stack examples. This submission deliberately chose a focused replication of three data-science themes rather than copying the portfolio wholesale.
+The reference catalog currently contains 15 numbered examples. This submission maps six of them to focused, reproducible experiments rather than copying their full-stack interfaces wholesale.
 
 ## Adapted master prompt
 
@@ -20,10 +20,12 @@ The reference catalog contains 14 full-stack examples. This submission deliberat
 
 ## Reference-theme adaptations
 
-1. **End-to-end prediction:** adapted the repository's supervised-learning prompts to Adult Income and added a dummy baseline so accuracy could be interpreted under class imbalance.
-2. **Customer segmentation clustering:** adapted the clustering prompt to demographic numeric attributes using MiniBatch K-means and a sampled silhouette score.
-3. **Anomaly detection:** adapted the anomaly-platform prompt to an Isolation Forest experiment and explicitly documented that the selected contamination rate controls the number flagged.
-4. **Enterprise audit:** adapted the audit prompt into leakage checks, deterministic seeds, group metrics, data-age limitations, and a non-deployment recommendation.
+1. **Project 03 — Customer segmentation:** adapted clustering to Adult numerical attributes with MiniBatch K-means and a sampled silhouette score.
+2. **Project 04 — Associative pattern mining:** treated Adult categorical values as baskets and mined support, confidence, and lift rules.
+3. **Project 06 — Anomaly detection:** used Isolation Forest and documented that the selected contamination rate controls the cutoff.
+4. **Project 07 — AutoML:** automatically compared four scikit-learn candidates using identical preprocessing and three-fold cross-validation.
+5. **Project 11 — Enterprise audit:** checked leakage, deterministic seeds, tests, group metrics, data age, and deployment limitations.
+6. **Project 12 — Time-series forecasting:** compared seasonal-naive and Ridge forecasts on a chronological AirPassengers holdout.
 
 ## Agent journey
 
@@ -34,6 +36,9 @@ The reference catalog contains 14 full-stack examples. This submission deliberat
 5. Ran the test once to observe the intended missing-module failure, then implemented the analysis.
 6. Ran the pipeline on all 48,842 records and inspected every generated figure.
 7. Wrote the conclusions from the measured output, including weak clustering and group-level limitations.
+8. Added three more experiments after confirming the emailed minimum was six projects.
+9. Wrote failing tests before implementing association mining, AutoML-style benchmarking, and forecasting.
+10. Generated and visually inspected the three new evidence sets, then organized all six under `replications/`.
 
 ## Useful follow-up prompts
 
