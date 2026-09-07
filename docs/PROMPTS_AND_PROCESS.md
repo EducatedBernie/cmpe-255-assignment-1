@@ -14,6 +14,8 @@ This is a process record, not a fabricated verbatim transcript. The original Cod
 
 The reference catalog currently contains 15 numbered examples. This submission maps six of them to focused, reproducible experiments rather than copying their full-stack interfaces wholesale.
 
+On September 6, 2026, the author confirmed that any six reference projects may be selected and requested the simplest acceptable adaptations. The existing selection—03, 04, 06, 07, 11, and 12—was retained, with authorization to finalize and publish it to the repository's main branch. The supplemental walkthrough's recording and upload remain separate pending work.
+
 ## Adapted master prompt
 
 > Build a reproducible, end-to-end CRISP-DM project on the Adult/Census Income dataset. Include data understanding, validation, cleaning, leakage-safe preprocessing, a dummy baseline, logistic regression, random forest, appropriate classification metrics, clustering, anomaly detection, interpretable visual evidence, and a responsible-use audit. Use fixed random seeds, test the non-trivial data logic, generate all artifacts from one command, and explain weak or negative findings instead of overstating them.

@@ -36,11 +36,11 @@ Isolation Forest flagged 2,443 records. This is exactly 5% because the experimen
 
 ### AutoML-style benchmark
 
-Four candidates were compared with identical preprocessing and three-fold cross-validation on 12,000 deterministic Adult samples. HistGradientBoosting ranked first with **0.9169 ROC-AUC** and **0.6988 F1**, narrowly ahead of random forest at 0.9057 ROC-AUC.
+Four candidates were compared with identical preprocessing and three-fold cross-validation on 12,000 deterministic Adult samples. HistGradientBoosting ranked first with **0.9169 ROC-AUC** and **0.6988 F1**, ahead of random forest at 0.9057 ROC-AUC. These scores also selected the winner, so they are not an independent final-test estimate. This comparison does not reproduce AutoGluon stacking.
 
 ### Time-series forecasting
 
-On the final 24 months of the AirPassengers series, Ridge regression reduced MAPE from **10.52%** for the seasonal-naive baseline to **3.15%**. Its lag and seasonal features captured the growth trend without randomizing the chronological evaluation.
+Across the final 24 months of the AirPassengers series, Ridge regression reduced MAPE from **10.52%** for the seasonal-naive baseline to **3.15%** under a fixed-model rolling one-step evaluation. Later predictions use actual earlier holdout observations as lag features. This is not a fixed-origin forecast of all 24 months, and the model is not refitted monthly. The comparison does not establish which feature caused the improvement.
 
 ### Group diagnostic
 

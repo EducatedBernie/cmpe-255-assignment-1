@@ -6,7 +6,7 @@ This repository is an end-to-end, reproducible study of the [Adult/Census Income
 
 > **YouTube walkthrough:** [Watch the complete end-to-end demonstration](https://youtu.be/ktyH8cvA3iw).
 
-> **Supplemental walkthrough:** recording pending for the three newly added Part 2 replications.
+> **Supplemental walkthrough:** recording pending for the three newly added Part 2 replications. [Recording script and screen cues](docs/SUPPLEMENTAL_VIDEO_SCRIPT.md).
 
 > **Medium article:** [Beyond Accuracy: What an Agent-Assisted Adult Income Project Actually Taught Me](https://medium.com/@bernie.miao/beyond-accuracy-what-an-agent-assisted-adult-income-project-actually-taught-me-03154ed71329?postPublishedType=initial).
 
@@ -64,7 +64,7 @@ python -m src.analysis
 python -m src.replications
 ```
 
-The last command downloads the original UCI files into ignored local storage and regenerates everything in `artifacts/`.
+`python -m src.analysis` downloads the original UCI files into ignored local storage if they are missing and regenerates the root `artifacts/`. Run it before `python -m src.replications`, which reads those files and the committed AirPassengers data and writes results under the individual replication directories.
 
 ## Repository map
 

@@ -13,6 +13,8 @@ This compact AutoML-style benchmark applies identical leakage-safe preprocessing
 | Logistic regression | 0.9014 | 0.6742 |
 | Extra trees | 0.8869 | 0.6535 |
 
+The winner is selected using these same cross-validation scores. Its score is not an independent final-test estimate; use an untouched test set or nested cross-validation for that claim.
+
 ## Evidence
 
 - [Cross-validation metrics](artifacts/metrics.csv)
