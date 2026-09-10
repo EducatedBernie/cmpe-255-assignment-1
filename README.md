@@ -6,7 +6,7 @@ This repository is an end-to-end, reproducible study of the [Adult/Census Income
 
 > **YouTube walkthrough:** [Watch the complete end-to-end demonstration](https://youtu.be/ktyH8cvA3iw).
 
-> **Supplemental walkthrough:** recording pending for the three newly added Part 2 replications. [Recording script and screen cues](docs/SUPPLEMENTAL_VIDEO_SCRIPT.md).
+> **Supplemental walkthrough:** [Association mining, automated model comparison, and forecasting](https://youtu.be/e6bMV6eCbok). [Recording script and screen cues](docs/SUPPLEMENTAL_VIDEO_SCRIPT.md).
 
 > **Medium article:** [Beyond Accuracy: What an Agent-Assisted Adult Income Project Actually Taught Me](https://medium.com/@bernie.miao/beyond-accuracy-what-an-agent-assisted-adult-income-project-actually-taught-me-03154ed71329?postPublishedType=initial).
 
@@ -100,4 +100,4 @@ This is a teaching project, not a decision system. The data represents 1994 cens
 - [x] Add the YouTube URL to this README
 - [x] Publish and link the Medium article
 - [x] Verify the public GitHub and YouTube links
-- [ ] Record and link the supplemental walkthrough for replications 04, 07, and 12
+- [x] Record and link the supplemental walkthrough for replications 04, 07, and 12
